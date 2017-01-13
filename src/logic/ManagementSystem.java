@@ -20,7 +20,6 @@ public class ManagementSystem {
         ManagementSystem ms = new ManagementSystem();
         ms.initClasses();
 
-
     }
 
     //инициализация классов

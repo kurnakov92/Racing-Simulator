@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManagementSystem.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManagementSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="56">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,12 +70,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Truck.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="612">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+              <folding>
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,9 +92,18 @@
       <file leaf-file-name="Auto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+              <folding>
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,9 +111,18 @@
       <file leaf-file-name="Motorcycle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,12 +148,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/vehicles/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/logic/ManagementSystem.java" />
-        <option value="$PROJECT_DIR$/src/vehicles/Truck.java" />
         <option value="$PROJECT_DIR$/src/data/ConfigReader.java" />
         <option value="$PROJECT_DIR$/src/vehicles/Car.java" />
+        <option value="$PROJECT_DIR$/src/vehicles/Truck.java" />
         <option value="$PROJECT_DIR$/src/vehicles/Auto.java" />
         <option value="$PROJECT_DIR$/src/vehicles/Motorcycle.java" />
+        <option value="$PROJECT_DIR$/src/logic/ManagementSystem.java" />
       </list>
     </option>
   </component>
@@ -711,15 +738,15 @@
       <option name="presentableId" value="Default" />
       <updated>1484223995366</updated>
       <workItem from="1484223996882" duration="68000" />
-      <workItem from="1484321163120" duration="6691000" />
+      <workItem from="1484321163120" duration="7697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6759000" />
+    <option name="totallyTimeSpent" value="7765000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -831,26 +850,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="56">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
           </folding>
         </state>
       </provider>
