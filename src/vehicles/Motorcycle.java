@@ -13,12 +13,12 @@ public class Motorcycle {
     private boolean availabilitySidecar;
 
     public Motorcycle(ConfigReader configReader) {
-
+/*
         this.speed = configReader.getSpeedMoto();
         this.probabilityWheelPuncture = configReader.getProbabilityWheelPunctureMoto();
         this.timeForReplacementWheels = configReader.getTimeForReplacementWheelsMoto();
         this.availabilitySidecar = configReader.getAvailabilitySidecar();
-
+*/
     }
 
     public int getSpeed() {

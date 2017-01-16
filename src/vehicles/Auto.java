@@ -13,12 +13,12 @@ public class Auto {
     private int numberOfPassengers;
 
     public Auto(ConfigReader configReader) {
-
+/*
         this.speed = configReader.getSpeedAuto();
         this.probabilityWheelPuncture = configReader.getProbabilityWheelPunctureAuto();
         this.timeForReplacementWheels = configReader.getTimeForReplacementWheelsAuto();
         this.numberOfPassengers = configReader.getNumberOfPassangers();
-
+*/
     }
 
     public int getSpeed() {

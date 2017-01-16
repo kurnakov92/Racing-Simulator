@@ -10,66 +10,125 @@ import java.util.Properties;
  */
 public class ConfigReader {
 
-    //скорость мотоцикла
-    private static int SPEED_MOTO;
-    //скорость автомобиля
-    private static int SPEED_AUTO;
-    //скорость грузовика
-    private static int SPEED_TRUCK;
-    //вероятность прокола колеса мотоцикла
-    private static double PROPABILITY_WHEEL_PUNCTURE_MOTO;
-    //вероятность прокола колеса легкового автомобиля
-    private static double PROPABILITY_WHEEL_PUNCTURE_AUTO;
-    //вероятность прокола колеса грузовика
-    private static double PROPABILITY_WHEEL_PUNCTURE_TRUCK;
-    //время на замену колеса (мотоцикл)
-    private static int TIME_FOR_REPLACEMENT_WHEELS_MOTO;
-    //время на замену колеса (автомобиль)
-    private static int TIME_FOR_REPLACEMENT_WHEELS_AUTO;
-    //время на замену колеса (грузовик)
-    private static int TIME_FOR_REPLACEMENT_WHEELS_TRUCK;
-    //вес груза (для грузовых)
-    private static int CARGO_WEIGHT;
-    //количество пассажиров (для легковых)
-    private static int NUMBER_OF_PASSENGERS;
-    //наличие коляски (для мотоцикла)
-    private static boolean AVAILABILITY_SIDECAR;
-    //количество мотоциклов
-    private static int QUANTITY_MOTO;
-    //количество автомобилей
-    private static int QUANTITY_AUTO;
-    //количество грузовиков
-    private static int QUANTITY_TRUCK;
+    //количество мотоциклов, автомобилей, грузовиков
+    private int quantityMoto, quantityAuto, quantityTruck;
     //длина гоночного круга
-    private static int CIRCLE_LENGTH;
+    private int circleLength;
+    //названия мотоциклов, автомобилей, грузовиков
+    private String[] motoName, autoName, truckName;
+    //вероятность прокола колеса
+    private int[] probabilityWheelPunctureMoto, probabilityWheelPunctureAuto, probabilityWheelPunctureTruck;
+    //количество пассажиров в легковом авто, вес груза в грузовике
+    private int[] numberOfPassengers, cargoWeight;
+    //наличие коляски на мотоцикле
+    private boolean[] availabilitySidecar;
+    //время замены колеса
+    private int[] timeForReplacementWheelMoto, timeForReplacementWheelAuto, timeForReplacementWheelTruck;
+
+    //типы
+    private static String TYPE_MOTO, TYPE_AUTO, TYPE_TRUCK;
+
+
 
     public ConfigReader() {
 
         try {
             Properties props = new Properties();
-            props.load(new FileInputStream(new File("config/vehicle_settings.ini")));
-            SPEED_MOTO = Integer.parseInt(props.getProperty("db.speedMoto"));
-            SPEED_AUTO = Integer.parseInt(props.getProperty("db.speedAuto"));
-            SPEED_TRUCK = Integer.parseInt(props.getProperty("db.speedTruck"));
-            PROPABILITY_WHEEL_PUNCTURE_MOTO = Double.parseDouble(props.getProperty("db.propabilityWheelPunctureMoto"));
-            PROPABILITY_WHEEL_PUNCTURE_AUTO = Double.parseDouble(props.getProperty("db.propabilityWheelPunctureAuto"));
-            PROPABILITY_WHEEL_PUNCTURE_TRUCK = Double.parseDouble(props.getProperty("db.propabilityWheelPunctureTruck"));
-            TIME_FOR_REPLACEMENT_WHEELS_MOTO = Integer.parseInt(props.getProperty("db.timeForReplacementWheelsMoto"));
-            TIME_FOR_REPLACEMENT_WHEELS_AUTO = Integer.parseInt(props.getProperty("db.timeForReplacementWheelsAuto"));
-            TIME_FOR_REPLACEMENT_WHEELS_TRUCK = Integer.parseInt(props.getProperty("db.timeForReplacementWheelsTruck"));
-            CARGO_WEIGHT = Integer.parseInt(props.getProperty("db.cargoWeight"));
-            NUMBER_OF_PASSENGERS = Integer.parseInt(props.getProperty("db.numberOfPassengers"));
-            AVAILABILITY_SIDECAR = Boolean.parseBoolean("db.availabilitySidecar");
-            QUANTITY_MOTO = Integer.parseInt(props.getProperty("db.quantityMoto"));
-            QUANTITY_AUTO = Integer.parseInt(props.getProperty("db.quantityAuto"));
-            QUANTITY_TRUCK = Integer.parseInt(props.getProperty("db.quantityTruck"));
-            CIRCLE_LENGTH = Integer.parseInt(props.getProperty("db.circleLength"));
+            props.load(new FileInputStream(new File("config/vehicle_config.ini")));
+
+            circleLength = Integer.parseInt(props.getProperty("db.circleLength"));
+
+            TYPE_MOTO = props.getProperty("db.vehicleType.0");
+            TYPE_AUTO = props.getProperty("db.vehicleType.1");
+            TYPE_TRUCK = props.getProperty("db.vehicleType.2");
+
+            quantityMoto = Integer.parseInt(props.getProperty("db.quantityMoto"));
+            quantityAuto = Integer.parseInt(props.getProperty("db.quantityAuto"));
+            quantityTruck = Integer.parseInt(props.getProperty("db.quantityTruck"));
+
+            initArrays(quantityMoto, quantityAuto, quantityTruck);
+
+
+
+
+            for (int i = 0; i <quantityMoto; i++){
+                motoName[i] = props.getProperty("db." + TYPE_MOTO + "." + i + "." + "name");
+                probabilityWheelPunctureMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
+                       + "." + "propabilityWheelPuncture"));
+                availabilitySidecar[i] = Boolean.parseBoolean(String.valueOf(props.getProperty("db." + TYPE_MOTO + "." + i
+                        + "." + "availabilitySidecar")));
+                timeForReplacementWheelMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
+                        + "." + "timeForReplacementWheel"));
+                System.out.println(motoName[i] + "| ВПК: " + availabilitySidecar[i] + " | Наличие коляски: "
+                 + availabilitySidecar[i] + " | Время на замену колеса: " + timeForReplacementWheelMoto[i]);
+            }
+
+
+            System.out.println();
+            for (int i = 0; i <quantityAuto; i++){
+                autoName[i] = props.getProperty("db." + TYPE_AUTO + "." + i + "." + "name");
+                probabilityWheelPunctureAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
+                        + "." + "propabilityWheelPuncture"));
+                numberOfPassengers[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
+                        + "." + "numberOfPassengers"));
+                timeForReplacementWheelAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
+                        + "." + "timeForReplacementWheel"));
+                System.out.println(autoName[i] + "| ВПК: " + probabilityWheelPunctureAuto[i] + " | К-во пассажиров: "
+                 + numberOfPassengers[i] + " | Время на замену колеса: " + timeForReplacementWheelAuto[i]);
+            }
+
+            System.out.println();
+            for (int i = 0; i <quantityTruck; i++){
+                truckName[i] = props.getProperty("db." + TYPE_TRUCK + "." + i + "." + "name");
+                probabilityWheelPunctureTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
+                        + "." + "propabilityWheelPuncture"));
+                cargoWeight[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
+                        + "." + "cargoWeight"));
+                timeForReplacementWheelTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
+                        + "." + "timeForReplacementWheel"));
+                System.out.println(truckName[i] + "| ВПК: " + probabilityWheelPunctureTruck[i] + " | Вес груза: "
+                        + cargoWeight[i] + " | Время на замену колеса: " + timeForReplacementWheelTruck[i]);
+            }
+
+
+
+
         } catch (IOException ex){
             System.err.println("ERROR: Configuration file does not exist!");
         }
 
 
     }
+
+    private void initArrays(int quantityMoto, int quantityAuto, int quantityTruck) {
+
+        //Названия покатушек
+        motoName = new String[quantityMoto];
+        autoName = new String[quantityAuto];
+        truckName = new String[quantityTruck];
+
+        //вероятности прокола колеса
+        probabilityWheelPunctureMoto = new int[quantityMoto];
+        probabilityWheelPunctureAuto = new int[quantityAuto];
+        probabilityWheelPunctureTruck = new int[quantityTruck];
+
+        availabilitySidecar = new boolean[quantityMoto];
+        numberOfPassengers = new int[quantityAuto];
+        cargoWeight = new int[quantityTruck];
+
+        timeForReplacementWheelMoto = new int[quantityMoto];
+        timeForReplacementWheelAuto = new int[quantityAuto];
+        timeForReplacementWheelTruck = new int[quantityTruck];
+
+    }
+
+    private void init(){
+
+    }
+
+
+
+    /*
 
     public int getSpeedMoto() {
         return this.SPEED_MOTO;
@@ -134,5 +193,6 @@ public class ConfigReader {
     public int getCircleLength(){
         return this.getCircleLength();
     }
+    */
 
 }

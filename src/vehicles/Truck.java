@@ -13,12 +13,12 @@ public class Truck {
     private int cargoWeight;
 
     public Truck(ConfigReader configReader) {
-
+/*
         this.speed = configReader.getSpeedTruck();
         this.probabilityWheelPuncture = configReader.getProbabilityWheelPunctureTruck();
         this.timeForReplacementWheels = configReader.getTimeForReplacementWheelsTruck();
         this.cargoWeight = configReader.getCargoWeight();
-
+*/
     }
 
     public int getSpeed() {

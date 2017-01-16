@@ -24,7 +24,7 @@ public class ManagementSystem {
 
         ManagementSystem ms = new ManagementSystem();
         ms.init();
-        ms.startRace();
+        //ms.startRace();
 
 
 
@@ -51,6 +51,8 @@ public class ManagementSystem {
     private void init() {
 
         ConfigReader configReader = new ConfigReader();
+
+        /*
         motoQuantity = configReader.getQuantityMoto();
         autoQuantity = configReader.getQuantityAuto();
         truckQuantity = configReader.getQuantityTruck();
@@ -70,6 +72,7 @@ public class ManagementSystem {
         for (int i = 0;  i < truckQuantity; i++){
             truck[i] = new Truck(configReader);
         }
+        */
 
     }
 
