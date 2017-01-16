@@ -33,6 +33,10 @@ public class Motorcycle {
         return this.timeForReplacementWheels;
     }
 
+    public boolean getAvailabilitySidecar() {
+        return this.availabilitySidecar;
+    }
+
     public boolean isAvailabilitySidecar() {
         return this.availabilitySidecar;
     }

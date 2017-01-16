@@ -34,7 +34,14 @@ public class ConfigReader {
     private static int NUMBER_OF_PASSENGERS;
     //наличие коляски (для мотоцикла)
     private static boolean AVAILABILITY_SIDECAR;
-
+    //количество мотоциклов
+    private static int QUANTITY_MOTO;
+    //количество автомобилей
+    private static int QUANTITY_AUTO;
+    //количество грузовиков
+    private static int QUANTITY_TRUCK;
+    //длина гоночного круга
+    private static int CIRCLE_LENGTH;
 
     public ConfigReader() {
 
@@ -53,6 +60,10 @@ public class ConfigReader {
             CARGO_WEIGHT = Integer.parseInt(props.getProperty("db.cargoWeight"));
             NUMBER_OF_PASSENGERS = Integer.parseInt(props.getProperty("db.numberOfPassengers"));
             AVAILABILITY_SIDECAR = Boolean.parseBoolean("db.availabilitySidecar");
+            QUANTITY_MOTO = Integer.parseInt(props.getProperty("db.quantityMoto"));
+            QUANTITY_AUTO = Integer.parseInt(props.getProperty("db.quantityAuto"));
+            QUANTITY_TRUCK = Integer.parseInt(props.getProperty("db.quantityTruck"));
+            CIRCLE_LENGTH = Integer.parseInt(props.getProperty("db.circleLength"));
         } catch (IOException ex){
             System.err.println("ERROR: Configuration file does not exist!");
         }
@@ -107,4 +118,21 @@ public class ConfigReader {
     public boolean getAvailabilitySidecar() {
         return this.AVAILABILITY_SIDECAR;
     }
+
+    public int getQuantityMoto(){
+        return this.QUANTITY_MOTO;
+    }
+
+    public int getQuantityAuto(){
+        return this.QUANTITY_AUTO;
+    }
+
+    public int getQuantityTruck(){
+        return this.QUANTITY_TRUCK;
+    }
+
+    public int getCircleLength(){
+        return this.getCircleLength();
+    }
+
 }
