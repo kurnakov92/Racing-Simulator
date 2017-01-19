@@ -73,9 +73,6 @@ public class ConfigReader {
                     + "." + "timeForReplacementWheel"));
             speedMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
                     + "." + "speed"));
-            /*System.out.println(motoName[i] + "| ВПК: " + availabilitySidecar[i] + " | Наличие коляски: "
-                    + availabilitySidecar[i] + " | Время на замену колеса: " + timeForReplacementWheelMoto[i]
-                    +  " | Скорость: " + speedMoto[i]);*/
         }
 
 
@@ -90,9 +87,6 @@ public class ConfigReader {
                     + "." + "timeForReplacementWheel"));
             speedAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
                     + "." + "speed"));
-           /* System.out.println(autoName[i] + "| ВПК: " + probabilityWheelPunctureAuto[i] + " | К-во пассажиров: "
-                    + numberOfPassengers[i] + " | Время на замену колеса: " + timeForReplacementWheelAuto[i]
-                    +  " | Скорость: " + speedAuto[i]);*/
         }
 
         System.out.println();
@@ -106,9 +100,6 @@ public class ConfigReader {
                     + "." + "timeForReplacementWheel"));
             speedTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
                     + "." + "speed"));
-           /* System.out.println(truckName[i] + "| ВПК: " + probabilityWheelPunctureTruck[i] + " | Вес груза: "
-                    + cargoWeight[i] + " | Время на замену колеса: " + timeForReplacementWheelTruck[i]
-                    +  " | Скорость: " + speedTruck[i]);*/
         }
 
     }

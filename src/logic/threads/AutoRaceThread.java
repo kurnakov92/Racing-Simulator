@@ -1,7 +1,7 @@
 package logic.threads;
 
 import data.ConfigReader;
-import logic.ScoreTable;
+import data.ScoreTable;
 
 import java.util.Random;
 
@@ -13,26 +13,23 @@ public class AutoRaceThread implements Runnable {
     private Thread thread;
     private String name;
     private ConfigReader reader;
-    private String type;
+   // private String type;
 
     private int circleLength;
     private int index;
     private int speed;
     private int propability;
-    private int repTime;
 
     private static final int HOURS_TO_MINUTES = 60;
 
     private ScoreTable scoreTable;
 
-    public AutoRaceThread(ConfigReader configReader, String vehicleType, int vehicleIndex, ScoreTable scoreTable) {
+    public AutoRaceThread(ConfigReader configReader, int vehicleIndex, ScoreTable scoreTable) {
 
 
         thread = new Thread(this);
-        System.out.println(thread.getName());
 
         this.reader = configReader;
-        this.type = vehicleType;
         this.index = vehicleIndex;
         circleLength = configReader.getCircleLength();
         this.scoreTable = scoreTable;
@@ -40,7 +37,6 @@ public class AutoRaceThread implements Runnable {
         name = configReader.getAutoName(index);
         speed = configReader.getSpeedAuto(index);
         propability = configReader.getProbabilityWheelPunctureAuto(index);
-        repTime = configReader.getTimeForReplacementWheelAuto(index);
 
         thread.start();
     }
@@ -68,7 +64,7 @@ public class AutoRaceThread implements Runnable {
                 } else {
                     if (passedDistance >= circleLength) {
                         System.out.println(name + " гонку закончил.");
-                        scoreTable.setAutoTimeCompleteRace(index, System.currentTimeMillis());
+                        scoreTable.setAutoTimeCompleteRace(name, System.currentTimeMillis() - scoreTable.getStartTime());
                     } else {
                         System.out.println(name + " проехал " + passedDistance + "км");
                         thread.sleep(1000);

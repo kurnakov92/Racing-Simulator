@@ -25,11 +25,12 @@
       <file leaf-file-name="ManagementSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="1530">
+              <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
                 <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
               </folding>
             </state>
@@ -39,26 +40,24 @@
       <file leaf-file-name="MotoRaceThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1390">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state relative-caret-position="214">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoRaceThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java">
+      <file leaf-file-name="ScoreTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="72" column="87" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1300#1325#0" expanded="true" />
+                <element signature="e#1381#1701#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,12 +66,22 @@
       <file leaf-file-name="TruckRaceThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+            <state relative-caret-position="322">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoRaceThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,15 +113,16 @@
         <option value="$PROJECT_DIR$/src/vehicles/Motorcycle.java" />
         <option value="$PROJECT_DIR$/src/vehicles/Auto.java" />
         <option value="$PROJECT_DIR$/src/vehicles/Truck.java" />
-        <option value="$PROJECT_DIR$/src/data/ConfigReader.java" />
         <option value="$PROJECT_DIR$/src/logic/ChampionshipTable.java" />
         <option value="$PROJECT_DIR$/src/logic/ScoreTable.java" />
         <option value="$PROJECT_DIR$/src/logic/MotoRaceThread.java" />
         <option value="$PROJECT_DIR$/src/logic/RaceThread.java" />
-        <option value="$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java" />
-        <option value="$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java" />
-        <option value="$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/data/ConfigReader.java" />
+        <option value="$PROJECT_DIR$/src/data/ScoreTable.java" />
         <option value="$PROJECT_DIR$/src/logic/ManagementSystem.java" />
+        <option value="$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java" />
       </list>
     </option>
   </component>
@@ -161,8 +171,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,6 +259,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="data" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.ManagementSystem">
     <configuration default="false" name="ManagementSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -718,12 +733,13 @@
       <workItem from="1484748438108" duration="48000" />
       <workItem from="1484748842379" duration="11761000" />
       <workItem from="1484769296942" duration="3189000" />
-      <workItem from="1484817921265" duration="2462000" />
+      <workItem from="1484817921265" duration="5993000" />
+      <workItem from="1484843864118" duration="4313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46573000" />
+    <option name="totallyTimeSpent" value="54417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -780,11 +796,47 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="68" column="63" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1300#1325#0" expanded="true" />
+            <element signature="e#1381#1701#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -796,8 +848,6 @@
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,8 +858,6 @@
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,20 +868,11 @@
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java" />
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -841,19 +880,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java" />
     <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -864,7 +897,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,16 +910,39 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java">
+    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="55" selection-start-line="92" selection-start-column="14" selection-end-line="94" selection-end-column="55" />
+          <folding>
+            <element signature="docComment;class#ConfigReader#0" expanded="false" />
+            <element signature="method#ConfigReader#0;class#ConfigReader#0" expanded="false" />
+            <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
+            <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
+            <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -899,7 +956,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -911,33 +969,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="55" selection-start-line="92" selection-start-column="14" selection-end-line="94" selection-end-column="55" />
-          <folding>
-            <element signature="docComment;class#ConfigReader#0" expanded="false" />
-            <element signature="method#ConfigReader#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -953,7 +985,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,6 +998,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -980,7 +1014,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -992,6 +1027,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -1007,7 +1043,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1019,6 +1056,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -1034,33 +1072,15 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java" />
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1068,6 +1088,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -1083,33 +1104,15 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java" />
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1117,6 +1120,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
@@ -1124,28 +1128,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vehicles/Vehicle.java" />
     <entry file="file://$PROJECT_DIR$/src/logic/MainMenu.java" />
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Motorcycle.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Auto.java" />
+    <entry file="file://$PROJECT_DIR$/src/vehicles/Truck.java" />
     <entry file="jar://D:/Java/jdk1.7.0_79/src.zip!/java/util/TimerTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1153,80 +1138,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java" />
     <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="-633">
+          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
           <folding>
             <element signature="docComment;class#ConfigReader#0" expanded="false" />
             <element signature="method#ConfigReader#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6126#6127#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/ScoreTable.java">
+    <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#1300#1325#0" expanded="true" />
+            <element signature="e#1381#1701#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1390">
-          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state relative-caret-position="214">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="72" column="87" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
+        <state relative-caret-position="217">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+        <state relative-caret-position="322">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="1530">
+          <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>

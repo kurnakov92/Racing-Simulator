@@ -1,9 +1,12 @@
 package logic;
 
 import data.ConfigReader;
+import data.ScoreTable;
 import logic.threads.AutoRaceThread;
 import logic.threads.MotoRaceThread;
 import logic.threads.TruckRaceThread;
+
+import java.util.Scanner;
 
 /**
  * Created by Oleg on 12.01.2017.
@@ -27,18 +30,32 @@ public class ManagementSystem {
     private AutoRaceThread[] autoRaceThreads;
     private TruckRaceThread[] truckRaceThreads;
 
-    //TODO SINGLETONE
     public static void main(String[] args) {
 
         ManagementSystem ms = new ManagementSystem();
         System.out.println(Thread.currentThread());
         ms.init();
+        ms.printParameters();
         ms.startRace();
-        ms.joinThreads();
-        ms.scoreTable.showScoretable();
-        System.out.println("Запустить еще одну гонку?");
 
     }
+
+    private void isNeedRepeatRace() {
+
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine().toLowerCase();
+
+        if ("да".equals(str)){
+            startRace();
+        } else if ("нет".equals(str)){
+            return;
+        } else {
+            System.out.println("Введите да/нет");
+            isNeedRepeatRace();
+        }
+
+    }
+
 
     private void joinThreads() {
 
@@ -76,31 +93,36 @@ public class ManagementSystem {
 
     private void startRace() {
 
-        printParameters();
         startTime = System.currentTimeMillis();
         scoreTable.setStartTime(startTime);
         startRaceMoto();
         startRaceAuto();
         startRaceTruck();
+        joinThreads();
+        scoreTable.showScoretable();
+
+        System.out.println("Запустить еще одну гонку? (да/нет)");
+        System.out.println();
+        isNeedRepeatRace();
 
     }
 
 
     private void startRaceMoto() {
         for (int i = 0; i < motoQuantity; i++) {
-            motoRaceThreads[i] = new MotoRaceThread(reader, TYPE_MOTO, i, scoreTable);
+            motoRaceThreads[i] = new MotoRaceThread(reader, i, scoreTable);
         }
     }
 
     private void startRaceAuto() {
         for (int i = 0; i < autoQuantity; i++) {
-            autoRaceThreads[i] = new AutoRaceThread(reader, TYPE_AUTO, i, scoreTable);
+            autoRaceThreads[i] = new AutoRaceThread(reader, i, scoreTable);
         }
     }
 
     private void startRaceTruck() {
         for (int i = 0; i < truckQuantity; i++) {
-            truckRaceThreads[i] = new TruckRaceThread(reader, TYPE_TRUCK, i, scoreTable);
+            truckRaceThreads[i] = new TruckRaceThread(reader, i, scoreTable);
         }
     }
 
