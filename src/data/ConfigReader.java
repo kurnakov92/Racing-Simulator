@@ -24,6 +24,8 @@ public class ConfigReader {
     private boolean[] availabilitySidecar;
     //время замены колеса
     private int[] timeForReplacementWheelMoto, timeForReplacementWheelAuto, timeForReplacementWheelTruck;
+    //скорость покатушек
+    private int[] speedMoto, speedAuto, speedTruck;
 
     //типы покатушек
     private static String TYPE_MOTO, TYPE_AUTO, TYPE_TRUCK;
@@ -69,8 +71,11 @@ public class ConfigReader {
                     + "." + "availabilitySidecar")));
             timeForReplacementWheelMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
                     + "." + "timeForReplacementWheel"));
-            System.out.println(motoName[i] + "| ВПК: " + availabilitySidecar[i] + " | Наличие коляски: "
-                    + availabilitySidecar[i] + " | Время на замену колеса: " + timeForReplacementWheelMoto[i]);
+            speedMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
+                    + "." + "speed"));
+            /*System.out.println(motoName[i] + "| ВПК: " + availabilitySidecar[i] + " | Наличие коляски: "
+                    + availabilitySidecar[i] + " | Время на замену колеса: " + timeForReplacementWheelMoto[i]
+                    +  " | Скорость: " + speedMoto[i]);*/
         }
 
 
@@ -83,8 +88,11 @@ public class ConfigReader {
                     + "." + "numberOfPassengers"));
             timeForReplacementWheelAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
                     + "." + "timeForReplacementWheel"));
-            System.out.println(autoName[i] + "| ВПК: " + probabilityWheelPunctureAuto[i] + " | К-во пассажиров: "
-                    + numberOfPassengers[i] + " | Время на замену колеса: " + timeForReplacementWheelAuto[i]);
+            speedAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
+                    + "." + "speed"));
+           /* System.out.println(autoName[i] + "| ВПК: " + probabilityWheelPunctureAuto[i] + " | К-во пассажиров: "
+                    + numberOfPassengers[i] + " | Время на замену колеса: " + timeForReplacementWheelAuto[i]
+                    +  " | Скорость: " + speedAuto[i]);*/
         }
 
         System.out.println();
@@ -96,8 +104,11 @@ public class ConfigReader {
                     + "." + "cargoWeight"));
             timeForReplacementWheelTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
                     + "." + "timeForReplacementWheel"));
-            System.out.println(truckName[i] + "| ВПК: " + probabilityWheelPunctureTruck[i] + " | Вес груза: "
-                    + cargoWeight[i] + " | Время на замену колеса: " + timeForReplacementWheelTruck[i]);
+            speedTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
+                    + "." + "speed"));
+           /* System.out.println(truckName[i] + "| ВПК: " + probabilityWheelPunctureTruck[i] + " | Вес груза: "
+                    + cargoWeight[i] + " | Время на замену колеса: " + timeForReplacementWheelTruck[i]
+                    +  " | Скорость: " + speedTruck[i]);*/
         }
 
     }
@@ -118,9 +129,15 @@ public class ConfigReader {
         numberOfPassengers = new int[quantityAuto];
         cargoWeight = new int[quantityTruck];
 
+        //время для замены колеса
         timeForReplacementWheelMoto = new int[quantityMoto];
         timeForReplacementWheelAuto = new int[quantityAuto];
         timeForReplacementWheelTruck = new int[quantityTruck];
+
+        //скорость покатушек
+        speedMoto = new int[quantityMoto];
+        speedAuto = new int[quantityAuto];
+        speedTruck = new int[quantityTruck];
 
     }
 
@@ -188,6 +205,18 @@ public class ConfigReader {
 
     public int getTimeForReplacementWheelTruck(int index){
         return this.timeForReplacementWheelTruck[index];
+    }
+
+    public int getSpeedMoto(int index){
+        return this.speedMoto[index];
+    }
+
+    public int getSpeedAuto(int index){
+        return this.speedAuto[index];
+    }
+
+    public int getSpeedTruck(int index){
+        return this.speedTruck[index];
     }
 
 
