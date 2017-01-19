@@ -21,29 +21,25 @@
     <favorites_list name="Racing-Simulator" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="ManagementSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+            <state relative-caret-position="1207">
+              <caret line="164" column="29" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
                 <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-                <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MotoRaceThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+                <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,24 +48,41 @@
       <file leaf-file-name="ScoreTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
               <folding>
-                <element signature="e#1300#1325#0" expanded="true" />
-                <element signature="e#1381#1701#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
+                <element signature="e#889#914#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TruckRaceThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
+      <file leaf-file-name="ConfigReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ConfigReader#0" expanded="false" />
+                <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
+                <element signature="method#loadDataFromFile#0;class#ConfigReader#0" expanded="false" />
+                <element signature="e#5455#5456#0" expanded="true" />
+                <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
+                <element signature="e#5879#5880#0" expanded="true" />
+                <element signature="e#5966#5967#0" expanded="true" />
+                <element signature="e#6054#6055#0" expanded="true" />
+                <element signature="e#6159#6160#0" expanded="true" />
+                <element signature="e#6283#6284#0" expanded="true" />
+                <element signature="e#6408#6409#0" expanded="true" />
+                <element signature="e#6523#6524#0" expanded="true" />
+                <element signature="e#6620#6621#0" expanded="true" />
+                <element signature="e#6722#6723#0" expanded="true" />
+                <element signature="e#6836#6837#0" expanded="true" />
+                <element signature="e#6958#6959#0" expanded="true" />
+                <element signature="e#7081#7082#0" expanded="true" />
+                <element signature="e#7186#7187#0" expanded="true" />
+                <element signature="e#7272#7273#0" expanded="true" />
+                <element signature="e#7359#7360#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,11 +91,46 @@
       <file leaf-file-name="AutoRaceThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MotoRaceThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TruckRaceThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaceThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/threads/RaceThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,12 +165,13 @@
         <option value="$PROJECT_DIR$/src/logic/ScoreTable.java" />
         <option value="$PROJECT_DIR$/src/logic/MotoRaceThread.java" />
         <option value="$PROJECT_DIR$/src/logic/RaceThread.java" />
-        <option value="$PROJECT_DIR$/src/data/ConfigReader.java" />
-        <option value="$PROJECT_DIR$/src/data/ScoreTable.java" />
-        <option value="$PROJECT_DIR$/src/logic/ManagementSystem.java" />
         <option value="$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java" />
-        <option value="$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/logic/threads/RaceThread.java" />
+        <option value="$PROJECT_DIR$/src/data/ScoreTable.java" />
         <option value="$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java" />
+        <option value="$PROJECT_DIR$/src/data/ConfigReader.java" />
+        <option value="$PROJECT_DIR$/src/logic/ManagementSystem.java" />
       </list>
     </option>
   </component>
@@ -170,9 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,6 +298,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -734,15 +783,16 @@
       <workItem from="1484748842379" duration="11761000" />
       <workItem from="1484769296942" duration="3189000" />
       <workItem from="1484817921265" duration="5993000" />
-      <workItem from="1484843864118" duration="4313000" />
+      <workItem from="1484843864118" duration="4497000" />
+      <workItem from="1484854066324" duration="1764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54417000" />
+    <option name="totallyTimeSpent" value="56365000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -752,8 +802,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="0" y="22" width="1366" height="716" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="716" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="716" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -785,7 +835,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -799,10 +849,18 @@
         <state relative-caret-position="34">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,9 +880,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1300#1325#0" expanded="true" />
-            <element signature="e#1381#1701#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#889#914#0" expanded="true" />
+            <element signature="e#970#1290#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,10 +892,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -878,10 +944,18 @@
         <state relative-caret-position="306">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,8 +971,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -908,10 +982,18 @@
         <state relative-caret-position="357">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,8 +1009,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -938,10 +1020,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -956,8 +1046,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -967,10 +1057,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,8 +1083,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,10 +1094,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1014,8 +1120,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,10 +1131,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,8 +1157,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1054,10 +1168,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1072,8 +1194,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1086,10 +1208,18 @@
         <state relative-caret-position="357">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1104,8 +1234,8 @@
             <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
             <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6009#6010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1118,10 +1248,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1139,38 +1277,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/RaceThread.java" />
-    <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
+    <entry file="file://$PROJECT_DIR$/src/logic/threads/RaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
-          <folding>
-            <element signature="docComment;class#ConfigReader#0" expanded="false" />
-            <element signature="method#ConfigReader#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#initArrays#0;class#ConfigReader#0" expanded="false" />
-            <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6126#6127#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
+    <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <element signature="e#1300#1325#0" expanded="true" />
-            <element signature="e#1381#1701#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/threads/MotoRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1179,33 +1308,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/threads/AutoRaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/threads/TruckRaceThread.java">
+    <entry file="file://$PROJECT_DIR$/src/data/ConfigReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ConfigReader#0" expanded="false" />
+            <element signature="method#initVariables#0;class#ConfigReader#0" expanded="false" />
+            <element signature="method#loadDataFromFile#0;class#ConfigReader#0" expanded="false" />
+            <element signature="e#5455#5456#0" expanded="true" />
+            <element signature="method#getQuantity#0;class#ConfigReader#0" expanded="false" />
+            <element signature="e#5879#5880#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6054#6055#0" expanded="true" />
+            <element signature="e#6159#6160#0" expanded="true" />
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6408#6409#0" expanded="true" />
+            <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6620#6621#0" expanded="true" />
+            <element signature="e#6722#6723#0" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
+            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#7081#7082#0" expanded="true" />
+            <element signature="e#7186#7187#0" expanded="true" />
+            <element signature="e#7272#7273#0" expanded="true" />
+            <element signature="e#7359#7360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ScoreTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+          <folding>
+            <element signature="e#889#914#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/ManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+        <state relative-caret-position="1207">
+          <caret line="164" column="29" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#main#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#showDialog#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
             <element signature="method#joinThreads#0;class#ManagementSystem#0" expanded="false" />
-            <element signature="method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRace#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceMoto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceAuto#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#startRaceTruck#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="docComment;method#printParameters#0;class#ManagementSystem#0" expanded="false" />
+            <element signature="method#init#0;class#ManagementSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>

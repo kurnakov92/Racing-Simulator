@@ -3,12 +3,10 @@ package logic.threads;
 import data.ConfigReader;
 import data.ScoreTable;
 
-import java.util.Random;
-
 /**
  * Created by Oleg on 19.01.2017.
  */
-public class MotoRaceThread implements Runnable {
+public class MotoRaceThread extends RaceThread implements Runnable {
 
     private Thread thread;
     private String name;
@@ -17,7 +15,7 @@ public class MotoRaceThread implements Runnable {
     private int circleLength;
     private int index;
     private int speed;
-    private int propability;
+    private int puncturePropability;
 
     private static final int HOURS_TO_MINUTES = 60;
 
@@ -34,7 +32,7 @@ public class MotoRaceThread implements Runnable {
 
         name = configReader.getMotoName(index);
         speed = configReader.getSpeedMoto(index);
-        propability = configReader.getProbabilityWheelPunctureMoto(index);
+        puncturePropability = configReader.getProbabilityWheelPunctureMoto(index);
 
         thread.start();
 
@@ -54,7 +52,7 @@ public class MotoRaceThread implements Runnable {
 
             do {
                 passedDistance += distanceForMinute;
-                if (isPunchered()) {
+                if (isPunchered(puncturePropability)) {
                     System.out.println(name + " проехал " + passedDistance + "км");
                     System.out.println(name + ": прокол колеса!");
                     thread.sleep(timeForReplaceWheel * 1000);
@@ -75,16 +73,5 @@ public class MotoRaceThread implements Runnable {
 
 
     }
-
-    private boolean isPunchered() {
-        boolean result = false;
-
-        Random rand = new Random();
-        int i = rand.nextInt(100);
-        if (i <= propability) result = true;
-
-        return result;
-    }
-
 
 }

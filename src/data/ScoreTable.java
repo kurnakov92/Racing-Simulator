@@ -4,27 +4,12 @@ import java.util.*;
 
 /**
  * Created by Oleg on 18.01.2017.
+ * В этом классе составляется и выводится таблица первенства по результатам гонки
  */
 public class ScoreTable {
 
     private long startTime = 0;
-
-    private int motoQuantity;
-    private int autoQuantity;
-    private int truckQuantity;
-
     private HashMap hashMap = new HashMap();
-
-    private static final String TYPE_MOTO = "moto";
-    private static final String TYPE_AUTO = "auto";
-    private static final String TYPE_TRUCK = "truck";
-
-    public ScoreTable(ConfigReader configReader) {
-
-        motoQuantity = configReader.getQuantity(TYPE_MOTO);
-        autoQuantity = configReader.getQuantity(TYPE_AUTO);
-        truckQuantity = configReader.getQuantity(TYPE_TRUCK);
-    }
 
     public void setMotoTimeCompleteRace(String vehicleName, long time) {
         this.hashMap.put(vehicleName, time);
@@ -71,6 +56,5 @@ public class ScoreTable {
         System.out.println();
 
     }
-
 
 }

@@ -26,7 +26,6 @@ public class ConfigReader {
     private int[] timeForReplacementWheelMoto, timeForReplacementWheelAuto, timeForReplacementWheelTruck;
     //скорость покатушек
     private int[] speedMoto, speedAuto, speedTruck;
-
     //типы покатушек
     private static String TYPE_MOTO, TYPE_AUTO, TYPE_TRUCK;
 
@@ -41,7 +40,7 @@ public class ConfigReader {
             initArrays(quantityMoto, quantityAuto, quantityTruck);
             loadDataFromFile(props);
 
-        } catch (IOException ex){
+        } catch (IOException ex) {
             System.err.println("ERROR: Configuration file does not exist!");
         }
 
@@ -63,7 +62,7 @@ public class ConfigReader {
 
     private void loadDataFromFile(Properties props) {
 
-        for (int i = 0; i <quantityMoto; i++){
+        for (int i = 0; i < quantityMoto; i++) {
             motoName[i] = props.getProperty("db." + TYPE_MOTO + "." + i + "." + "name");
             probabilityWheelPunctureMoto[i] = Integer.parseInt(props.getProperty("db." + TYPE_MOTO + "." + i
                     + "." + "propabilityWheelPuncture"));
@@ -77,7 +76,7 @@ public class ConfigReader {
 
 
         System.out.println();
-        for (int i = 0; i <quantityAuto; i++){
+        for (int i = 0; i < quantityAuto; i++) {
             autoName[i] = props.getProperty("db." + TYPE_AUTO + "." + i + "." + "name");
             probabilityWheelPunctureAuto[i] = Integer.parseInt(props.getProperty("db." + TYPE_AUTO + "." + i
                     + "." + "propabilityWheelPuncture"));
@@ -90,7 +89,7 @@ public class ConfigReader {
         }
 
         System.out.println();
-        for (int i = 0; i <quantityTruck; i++){
+        for (int i = 0; i < quantityTruck; i++) {
             truckName[i] = props.getProperty("db." + TYPE_TRUCK + "." + i + "." + "name");
             probabilityWheelPunctureTruck[i] = Integer.parseInt(props.getProperty("db." + TYPE_TRUCK + "." + i
                     + "." + "propabilityWheelPuncture"));
@@ -106,12 +105,10 @@ public class ConfigReader {
 
     private void initArrays(int quantityMoto, int quantityAuto, int quantityTruck) {
 
-        //Названия покатушек
         motoName = new String[quantityMoto];
         autoName = new String[quantityAuto];
         truckName = new String[quantityTruck];
 
-        //вероятности прокола колеса
         probabilityWheelPunctureMoto = new int[quantityMoto];
         probabilityWheelPunctureAuto = new int[quantityAuto];
         probabilityWheelPunctureTruck = new int[quantityTruck];
@@ -120,93 +117,91 @@ public class ConfigReader {
         numberOfPassengers = new int[quantityAuto];
         cargoWeight = new int[quantityTruck];
 
-        //время для замены колеса
         timeForReplacementWheelMoto = new int[quantityMoto];
         timeForReplacementWheelAuto = new int[quantityAuto];
         timeForReplacementWheelTruck = new int[quantityTruck];
 
-        //скорость покатушек
         speedMoto = new int[quantityMoto];
         speedAuto = new int[quantityAuto];
         speedTruck = new int[quantityTruck];
 
     }
 
-    public int getCircleLength(){
+    public int getCircleLength() {
         return this.circleLength;
     }
 
-    public int getQuantity(String str){
+    public int getQuantity(String str) {
         int quantity = 0;
 
         if ("moto".equals(str)) {
             quantity = quantityMoto;
-        } else if ("auto".equals(str)){
+        } else if ("auto".equals(str)) {
             quantity = quantityAuto;
-        } else if ("truck".equals(str)){
+        } else if ("truck".equals(str)) {
             quantity = quantityTruck;
         }
 
         return quantity;
     }
 
-    public String getMotoName(int index){
+    public String getMotoName(int index) {
         return this.motoName[index];
     }
 
-    public String getAutoName(int index){
+    public String getAutoName(int index) {
         return this.autoName[index];
     }
 
-    public String getTruckName(int index){
+    public String getTruckName(int index) {
         return this.truckName[index];
     }
 
-    public int getProbabilityWheelPunctureMoto(int index){
+    public int getProbabilityWheelPunctureMoto(int index) {
         return this.probabilityWheelPunctureMoto[index];
     }
 
-    public int getProbabilityWheelPunctureAuto(int index){
+    public int getProbabilityWheelPunctureAuto(int index) {
         return this.probabilityWheelPunctureAuto[index];
     }
 
-    public int getProbabilityWheelPunctureTruck(int index){
+    public int getProbabilityWheelPunctureTruck(int index) {
         return this.probabilityWheelPunctureTruck[index];
     }
 
-    public int getNumberOfPassangers(int index){
+    public int getNumberOfPassangers(int index) {
         return this.numberOfPassengers[index];
     }
 
-    public int getCargoWeight(int index){
+    public int getCargoWeight(int index) {
         return this.cargoWeight[index];
     }
 
-    public boolean getAvailabilitySidecar(int index){
+    public boolean getAvailabilitySidecar(int index) {
         return this.availabilitySidecar[index];
     }
 
-    public int getTimeForReplacementWheelMoto(int index){
+    public int getTimeForReplacementWheelMoto(int index) {
         return this.timeForReplacementWheelMoto[index];
     }
 
-    public int getTimeForReplacementWheelAuto(int index){
+    public int getTimeForReplacementWheelAuto(int index) {
         return this.timeForReplacementWheelAuto[index];
     }
 
-    public int getTimeForReplacementWheelTruck(int index){
+    public int getTimeForReplacementWheelTruck(int index) {
         return this.timeForReplacementWheelTruck[index];
     }
 
-    public int getSpeedMoto(int index){
+    public int getSpeedMoto(int index) {
         return this.speedMoto[index];
     }
 
-    public int getSpeedAuto(int index){
+    public int getSpeedAuto(int index) {
         return this.speedAuto[index];
     }
 
-    public int getSpeedTruck(int index){
+    public int getSpeedTruck(int index) {
         return this.speedTruck[index];
     }
 

@@ -33,30 +33,35 @@ public class ManagementSystem {
     public static void main(String[] args) {
 
         ManagementSystem ms = new ManagementSystem();
-        System.out.println(Thread.currentThread());
         ms.init();
         ms.printParameters();
         ms.startRace();
 
     }
 
-    private void isNeedRepeatRace() {
+    /**
+     * В этом методе пользователь решает повторить гонку или нет
+     */
+    private void showDialog() {
 
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine().toLowerCase();
 
-        if ("да".equals(str)){
+        if ("да".equals(str)) {
             startRace();
-        } else if ("нет".equals(str)){
+        } else if ("нет".equals(str)) {
             return;
         } else {
             System.out.println("Введите да/нет");
-            isNeedRepeatRace();
+            showDialog();
         }
 
     }
 
 
+    /**
+     * Ожидание завершения работы дочерних потоков
+     */
     private void joinThreads() {
 
         for (int i = 0; i < motoQuantity; i++) {
@@ -103,7 +108,7 @@ public class ManagementSystem {
 
         System.out.println("Запустить еще одну гонку? (да/нет)");
         System.out.println();
-        isNeedRepeatRace();
+        showDialog();
 
     }
 
@@ -126,8 +131,10 @@ public class ManagementSystem {
         }
     }
 
+    /**
+     * Вывод в консоль начальных параметров
+     */
     private void printParameters() {
-
 
         System.out.println("Мотоциклы: ");
         for (int i = 0; i < reader.getQuantity(TYPE_MOTO); i++) {
@@ -155,13 +162,14 @@ public class ManagementSystem {
                     + " мин" + " \n\t Скорость: " + reader.getSpeedTruck(i) + " км/ч");
         }
 
+        System.out.println();
+
     }
 
-    //инициализация
     private void init() {
 
         reader = new ConfigReader();
-        scoreTable = new ScoreTable(reader);
+        scoreTable = new ScoreTable();
         motoQuantity = reader.getQuantity(TYPE_MOTO);
         autoQuantity = reader.getQuantity(TYPE_AUTO);
         truckQuantity = reader.getQuantity(TYPE_TRUCK);

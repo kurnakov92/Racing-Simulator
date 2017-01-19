@@ -3,29 +3,25 @@ package logic.threads;
 import data.ConfigReader;
 import data.ScoreTable;
 
-import java.util.Random;
-
 /**
  * Created by Oleg on 19.01.2017.
  */
-public class AutoRaceThread implements Runnable {
+public class AutoRaceThread extends RaceThread implements Runnable {
 
     private Thread thread;
     private String name;
     private ConfigReader reader;
-   // private String type;
 
     private int circleLength;
     private int index;
     private int speed;
-    private int propability;
+    private int puncturePropability;
 
     private static final int HOURS_TO_MINUTES = 60;
 
     private ScoreTable scoreTable;
 
     public AutoRaceThread(ConfigReader configReader, int vehicleIndex, ScoreTable scoreTable) {
-
 
         thread = new Thread(this);
 
@@ -36,7 +32,7 @@ public class AutoRaceThread implements Runnable {
 
         name = configReader.getAutoName(index);
         speed = configReader.getSpeedAuto(index);
-        propability = configReader.getProbabilityWheelPunctureAuto(index);
+        puncturePropability = configReader.getProbabilityWheelPunctureAuto(index);
 
         thread.start();
     }
@@ -57,7 +53,7 @@ public class AutoRaceThread implements Runnable {
 
             do {
                 passedDistance += distanceForMinute;
-                if (isPunchered()) {
+                if (isPunchered(puncturePropability)) {
                     System.out.println(name + " проехал " + passedDistance + "км");
                     System.out.println(name + ": прокол колеса!");
                     thread.sleep(timeForReplaceWheel * 1000);
@@ -76,15 +72,5 @@ public class AutoRaceThread implements Runnable {
             System.out.println("Покатушка " + name + " сломалась! Ждем эвакуатор.");
         }
 
-    }
-
-    private boolean isPunchered() {
-        boolean result = false;
-
-        Random rand = new Random();
-        int i = rand.nextInt(100);
-        if (i <= propability) result = true;
-
-        return result;
     }
 }
